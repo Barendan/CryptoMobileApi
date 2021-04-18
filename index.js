@@ -86,12 +86,9 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
 });
 
 server.listen({ port }, () =>
   console.log("Server running at http://figureitout")
 );
-
-
-
-
